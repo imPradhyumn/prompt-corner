@@ -2,11 +2,11 @@ export default function Navbar() {
   return (
     <nav
       className="w-full bg-white fixed top-0 flex
-    items-center justify-between px-8 py-2
+    items-center justify-between px-3 md:px-8 py-2
     shadow-[0_4px_10px_rgba(20,20,20,0.2)]"
     >
       <div
-        className="text-[30px] font-medium tracking-tight text-[#101827]"
+        className="md:text-[30px] text-lg font-medium tracking-tight text-[#101827]"
         style={{ fontFamily: "Castellar, Comic Sans, cursive" }}
       >
         Prompt Corner

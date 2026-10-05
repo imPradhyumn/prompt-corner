@@ -13,9 +13,54 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Promptly",
+  title: {
+    default: "Prompt Corner",
+    template: "%s | Prompt Corner",
+  },
   description:
-    "Find best AI prompts to create your next cinematic, 4k ai edit of picture",
+    "Discover trending AI photo prompts, cinematic prompts, travel prompts, portrait prompts, and creative ideas for your next image generation project.",
+  keywords: [
+    "AI prompts",
+    "AI photo prompts",
+    "cinematic prompts",
+    "portrait prompts",
+    "travel prompts",
+    "creative prompts",
+    "HD prompts",
+    "Trending Prompts",
+    "Vintage prompts",
+    "retro prompts",
+    "bollywood prompts",
+    "ai image generator",
+  ],
+  authors: [{ name: "Pradhyumn Sharma" }],
+  creator: "Pradhyumn Sharma",
+  openGraph: {
+    title: "Prompt Corner",
+    description:
+      "Discover trending AI photo prompts and creative ideas for cinematic, portrait, travel, and fashion shots.",
+    siteName: "Prompt Corner",
+    type: "website",
+    url: "https://promptcorner.in",
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Prompt Corner",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Prompt Corner",
+    description:
+      "Discover trending AI photo prompts and creative ideas for cinematic, portrait, travel, and fashion shots.",
+    images: ["/og-image.jpg"],
+  },
+  alternates: {
+    canonical: "https://promptcorner.in",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "slug": "saree-transformation",
+    "title": "Saree Transformation",
+    "category": "Indian",
+    "image": "/images/saree.jpg",
+    "description": "Transform your photo into an elegant traditional saree portrait.",
+    "prompt": "Transform the uploaded photo into an elegant traditional Indian portrait featuring a beautiful silk saree, soft cinematic lighting, realistic facial details, and a refined editorial aesthetic."
+  },
+  {
+    "id": 2,
+    "slug": "vintage-bollywood",
+    "title": "Vintage Bollywood",
+    "category": "Vintage",
+    "image": "/images/vintage-bollywood.jpg",
+    "description": "Give your portrait a nostalgic 90s Bollywood aesthetic.",
+    "prompt": "Transform the uploaded photo into a nostalgic 1990s Bollywood film portrait with warm film grain, rich colors, soft lighting, and authentic vintage photography."
+  },
+  {
+    "id": 3,
+    "slug": "cinematic-travel",
+    "title": "Cinematic Travel",
+    "category": "Travel",
+    "image": "/images/cinematic-travel.jpg",
+    "description": "Turn an ordinary travel photo into a cinematic scene.",
+    "prompt": "Transform the uploaded photo into a cinematic travel photograph with atmospheric lighting, natural colors, beautiful scenery, realistic details, and professional composition."
+  }
+]

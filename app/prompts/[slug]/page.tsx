@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${prompt.title} AI Photo Prompt`,
-    description: prompt.description,
+    description: prompt.prompt.slice(0, 150),
   };
 }
 
@@ -51,11 +51,8 @@ export default async function PromptPage({ params }: Props) {
           {prompt.title}
         </h1>
 
-        <p className="my-3">{prompt.description}</p>
-
         <PromptCard
-          description={prompt.description}
-          image={prompt.image}
+          image_url={prompt.image_url}
           prompt={prompt.prompt}
           title={prompt.title}
         />

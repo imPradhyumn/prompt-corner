@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,9 +14,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://promptcorner.in"),
   title: {
     default: "Prompt Corner",
     template: "%s | Prompt Corner",
+  },
+  icons: {
+    icon: "/og-image.png",
+    apple: "/og-image.png",
   },
   description:
     "Discover trending AI photo prompts, cinematic prompts, travel prompts, portrait prompts, and creative ideas for your next image generation project.",
@@ -46,7 +52,7 @@ export const metadata: Metadata = {
     url: "https://promptcorner.in",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Prompt Corner",
@@ -58,7 +64,7 @@ export const metadata: Metadata = {
     title: "Prompt Corner",
     description:
       "Discover trending AI photo prompts and creative ideas for cinematic, portrait, travel, and fashion shots.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
   },
   alternates: {
     canonical: "https://promptcorner.in",
@@ -72,6 +78,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-pink-50">{children}</body>
+      <Analytics />
     </html>
   );
 }

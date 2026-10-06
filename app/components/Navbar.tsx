@@ -1,7 +1,7 @@
 export default function Navbar() {
   return (
     <nav
-      className="w-full bg-white fixed top-0 flex
+      className="w-full bg-white fixed top-0 flex z-50
     items-center justify-between px-3 md:px-8 py-2
     shadow-[0_4px_10px_rgba(20,20,20,0.2)]"
     >

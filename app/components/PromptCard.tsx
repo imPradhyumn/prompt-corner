@@ -1,19 +1,24 @@
 "use client";
 
+import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 
 interface PromptCardProps {
   image_url: string;
   title: string;
   prompt: string;
+  slug?: string;
 }
 
 export default function PromptCard({
   image_url,
   title,
   prompt,
+  slug,
 }: PromptCardProps) {
   const [isCopied, setIsCopied] = useState(false);
+  const router = useRouter();
 
   const handleCopy = async () => {
     try {
@@ -23,6 +28,10 @@ export default function PromptCard({
     } catch (error) {
       console.error("Failed to copy prompt:", error);
     }
+  };
+
+  const handleClick = () => {
+    router.push(`/prompts/${slug}`);
   };
 
   const CopyButton = () => {
@@ -67,9 +76,12 @@ export default function PromptCard({
   return (
     <article className="overflow-hidden rounded-lg border border-[#e8e8e8] bg-white">
       <div className="aspect-[4/5] overflow-hidden rounded-xl w-full overflow-hidden bg-[#eee]">
-        <img
-          src={image_url}
+        <Image
+          src={image_url || ""}
           alt={title}
+          width={800}
+          onClick={handleClick}
+          height={1000}
           className="h-full w-full object-cover"
         />
       </div>

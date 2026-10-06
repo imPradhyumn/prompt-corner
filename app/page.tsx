@@ -19,7 +19,6 @@ export default async function Home({
   }
 
   const { data: prompts, error } = await query;
-  console.log("🚀 ~ Home ~ prompts:", prompts);
 
   return (
     <div id="home" className="mt-5 pt-5">
@@ -55,6 +54,7 @@ export default async function Home({
                 image_url={prompt.image_url}
                 prompt={prompt.prompt}
                 title={prompt.title}
+                slug={prompt.slug}
               />
             );
           })}

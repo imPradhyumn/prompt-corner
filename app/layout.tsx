@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     apple: "/og-image.png",
   },
   description:
-    "Discover trending AI photo prompts, cinematic prompts, travel prompts, portrait prompts, and creative ideas for your next image generation project.",
+    "Discover trending best AI photo and image prompts, cinematic prompts, travel prompts, portrait prompts, and creative ideas for your next image generation project.",
   keywords: [
     "AI prompts",
     "AI photo prompts",
@@ -32,10 +32,11 @@ export const metadata: Metadata = {
     "portrait prompts",
     "travel prompts",
     "creative prompts",
-    "HD prompts",
+    "ai image prompts",
+    "ai HD prompts",
     "Trending Prompts",
-    "Vintage prompts",
-    "retro prompts",
+    "ai Vintage prompts",
+    "ai retro prompts",
     "bollywood prompts",
     "ai image generator prompt",
     "chatgpt prompts",
